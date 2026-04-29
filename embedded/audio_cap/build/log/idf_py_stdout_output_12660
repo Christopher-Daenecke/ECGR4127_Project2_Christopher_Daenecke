@@ -1,0 +1,322 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.3\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Espressif\frameworks\esp-idf-v5.5.3\audio_cap\build\audio_cap.elf C:\Espressif\frameworks\esp-idf-v5.5.3\audio_cap\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.3\tools\idf.py'
+[0;32mI (107) esp_image: segment 4: paddr=00079300 vaddr=40376c44 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x420075ff
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x152c
+load:0x403c8700,len:0xce4
+load:0x403cb700,len:0x2efc
+entry 0x403c8920
+[0;32mI (24) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Apr 28 2026 22:33:23[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (25) boot: efuse block revision: v1.3[0m
+[0;32mI (25) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (25) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (26) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (26) boot: Enabling RNG early entropy source...[0m
+[0;32mI (26) boot: Partition Table:[0m
+[0;32mI (26) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (27) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (27) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (27) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (28) boot: End of partition table[0m
+[0;32mI (28) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=16e5ch ( 93788) map[0m
+[0;32mI (45) esp_image: segment 1: paddr=00026e84 vaddr=3fc93500 size=06548h ( 25928) load[0m
+[0;32mI (51) esp_image: segment 2: paddr=0002d3d4 vaddr=40374000 size=02c44h ( 11332) load[0m
+[0;32mI (54) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=492d8h (299736) map[0m
+[0;32mI (107) esp_image: segment 4: paddr=00079300 vaddr=40376c44 size=0c848h ( 51272) load[0m
+[0;32mI (118) esp_image: segment 5: paddr=00085b50 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (125) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (126) boot: Disabling RNG early entropy source...[0m
+[0;32mI (127) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (127) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (128) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (128) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (128) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (128) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (129) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (129) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (129) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (129) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (130) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (130) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (130) esp_psram: Speed: 40MHz[0m
+[0;32mI (130) cpu_start: Multicore app[0m
+[0;32mI (861) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (870) cpu_start: Pro cpu start user code[0m
+[0;32mI (870) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (870) app_init: Application information:[0m
+[0;32mI (871) app_init: Project name:     audio_cap[0m
+[0;32mI (871) app_init: App version:      v5.5.3[0m
+[0;32mI (871) app_init: Compile time:     Apr 28 2026 22:33:07[0m
+[0;32mI (871) app_init: ELF file SHA256:  ee9526278...[0m
+[0;32mI (871) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (871) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (872) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (872) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (872) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (872) heap_init: At 3FCCFE98 len 00019878 (102 KiB): RAM[0m
+[0;32mI (872) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (873) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (873) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (873) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (874) spi_flash: detected chip: generic[0m
+[0;32mI (875) spi_flash: flash io: dio[0m
+[0;32mI (875) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (875) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (876) main_task: Started on CPU0[0m
+[0;32mI (886) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (886) main_task: Calling app_main()[0m
+[0;32mI (886) main_task: Returned from app_main()[0m
+[0;32mI (886) DSP: DSP initialized[0m
+[0;32mI (906) audio_capture: TFLite initialized OK[0m
+[0;32mI (1576) audio_capture: PREDICTION: basketball (123)[0m
+[0;32mI (2116) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (2656) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (3196) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (3746) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (4286) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (4826) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (5366) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (5976) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (6516) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (7056) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (7596) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (8136) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (8676) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (9216) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (9756) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (10376) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (10916) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (11456) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (11996) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (12536) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (13076) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (13616) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (14156) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (14766) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (15306) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (15846) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (16386) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (16926) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (17466) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (18006) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (18546) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (19166) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (19706) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (20246) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (20786) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (21326) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (21866) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (22406) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (22946) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (23556) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (24096) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (24636) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (25176) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (25716) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (26256) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (26796) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (27336) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (27956) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (28496) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (29036) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (29576) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (30116) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (30656) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (31196) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (31736) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (32346) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (32886) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (33426) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (33966) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (34506) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (35046) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (35586) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (36126) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (36746) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (37286) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (37826) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (38366) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (38906) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (39446) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (39986) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (40526) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (41136) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (41676) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (42216) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (42756) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (43296) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (43836) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (44376) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (44916) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (45536) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (46076) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (46616) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (47156) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (47696) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (48236) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (48776) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (49316) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (49926) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (50466) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (51006) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (51546) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (52086) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (52626) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (53166) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (53706) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (54326) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (54866) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (55406) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (55946) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (56486) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (57026) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (57566) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (58106) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (58716) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (59256) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (59796) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (60336) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (60876) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (61416) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (61956) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (62496) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (63116) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (63656) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (64196) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (64736) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (65276) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (65816) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (66356) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (66896) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (67506) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (68046) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (68586) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (69126) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (69666) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (70206) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (70746) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (71286) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (71906) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (72446) audio_capture: PREDICTION: basketball (126)[0m
+[0;32mI (72986) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (73526) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (74066) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (74606) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (75146) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (75686) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (76296) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (76836) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (77376) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (77916) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (78456) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (78996) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (79536) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (80076) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (80696) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (81236) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (81776) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (82316) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (82856) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (83396) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (83936) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (84476) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (85086) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (85626) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (86166) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (86706) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (87246) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (87786) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (88326) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (88866) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (89486) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (90026) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (90566) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (91106) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (91646) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (92186) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (92726) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (93266) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (93876) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (94416) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (94956) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (95496) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (96036) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (96576) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (97116) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (97656) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (98276) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (98816) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (99356) audio_capture: PREDICTION: basketball (126)[0m
+[0;32mI (99896) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (100436) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (100976) audio_capture: PREDICTION: basketball (126)[0m
+[0;32mI (101516) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (102056) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (102666) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (103206) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (103746) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (104286) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (104826) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (105366) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (105906) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (106446) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (107066) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (107606) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (108146) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (108686) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (109226) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (109766) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (110306) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (110846) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (111456) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (111996) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (112536) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (113076) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (113616) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (114156) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (114696) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (115236) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (115856) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (116396) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (116936) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (117476) audio_capture: PREDICTION: basketball (126)[0m
+[0;32mI (118016) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (118556) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (119096) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (119636) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (120246) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (120786) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (121326) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (121866) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (122406) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (122946) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (123486) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (124026) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (124646) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (125186) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (125726) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (126266) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (126806) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (127346) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (127886) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (128426) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (129036) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (129576) audio_capture: PREDICTION: basketball (126)[0m
+[0;32mI (130116) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (130656) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (131196) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (131736) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (132276) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (132816) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (133436) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (133976) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (134516) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (135056) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (135596) audio_capture: PREDICTION: basketball (127)[0m
+[0;32mI (136136) audio_capture: PREDICTION: basketball (127)[0m

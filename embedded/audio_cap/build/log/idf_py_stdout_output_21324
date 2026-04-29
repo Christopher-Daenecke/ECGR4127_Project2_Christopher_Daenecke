@@ -1,0 +1,41 @@
+Command: ninja all
+[1/11] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.5.3\audio_cap\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.3/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Espressif/frameworks/esp-idf-v5.5.3/audio_cap/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5160 bytes. 0x2ea0 bytes (36%) free.
+[2/11] No install step for 'bootloader'
+[3/11] Completed 'bootloader'
+[4/11] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/recognize_commands.cc.obj
+[5/11] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/micro_features_generator.cc.obj
+[6/11] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/audio_cap.cc.obj
+C:/Espressif/frameworks/esp-idf-v5.5.3/audio_cap/main/audio_cap.cc:129:14: warning: 'low_pass' defined but not used [-Wunused-variable]
+  129 | static float low_pass = 0;
+      |              ^~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.5.3/audio_cap/main/audio_cap.cc:79:16: warning: 'frontend_state' defined but not used [-Wunused-variable]
+   79 | static int8_t* frontend_state = nullptr;
+      |                ^~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.5.3/audio_cap/main/audio_cap.cc:72:34: warning: 'command_interpreter' defined but not used [-Wunused-variable]
+   72 | static tflite::MicroInterpreter* command_interpreter = nullptr;
+      |                                  ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.5.3/audio_cap/main/audio_cap.cc:71:34: warning: 'trigger_interpreter' defined but not used [-Wunused-variable]
+   71 | static tflite::MicroInterpreter* trigger_interpreter = nullptr;
+      |                                  ^~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.5.3/audio_cap/main/audio_cap.cc:69:16: warning: 'command_arena' defined but not used [-Wunused-variable]
+   69 | static uint8_t command_arena[128 * 1024];
+      |                ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.5.3/audio_cap/main/audio_cap.cc:68:16: warning: 'trigger_arena' defined but not used [-Wunused-variable]
+   68 | static uint8_t trigger_arena[16 * 1024];
+      |                ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.5.3/audio_cap/main/audio_cap.cc:56:20: warning: 'labels' defined but not used [-Wunused-variable]
+   56 | static const char* labels[] = {"_silence", "_unknown", "dog", "basketball"};
+      |                    ^~~~~~
+[7/11] Linking C static library esp-idf\main\libmain.a
+[8/11] Generating esp-idf/esp_system/ld/sections.ld
+[9/11] Linking CXX executable audio_cap.elf
+[10/11] Generating binary image from built executable
+esptool.py v4.12.dev1
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated C:/Espressif/frameworks/esp-idf-v5.5.3/audio_cap/build/audio_cap.bin
+[11/11] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.5.3\audio_cap\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.3/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Espressif/frameworks/esp-idf-v5.5.3/audio_cap/build/partition_table/partition-table.bin C:/Espressif/frameworks/esp-idf-v5.5.3/audio_cap/build/audio_cap.bin"
+audio_cap.bin binary size 0x75b80 bytes. Smallest app partition is 0x100000 bytes. 0x8a480 bytes (54%) free.

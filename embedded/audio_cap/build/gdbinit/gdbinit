@@ -1,0 +1,2 @@
+source C:/Espressif/frameworks/esp-idf-v5.5.3/audio_cap/build/gdbinit/symbols
+source C:/Espressif/frameworks/esp-idf-v5.5.3/audio_cap/build/gdbinit/connect

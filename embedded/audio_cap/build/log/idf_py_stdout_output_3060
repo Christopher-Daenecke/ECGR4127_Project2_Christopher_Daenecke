@@ -1,0 +1,152 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.3\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Espressif\frameworks\esp-idf-v5.5.3\audio_cap\build\audio_cap.elf C:\Espressif\frameworks\esp-idf-v5.5.3\audio_cap\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.3\tools\idf.py'
+[0;32mI (107) esp_image: segment 4: paddr=000792b0 vaddr=40376c14 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42007603
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x152c
+load:0x403c8700,len:0xce4
+load:0x403cb700,len:0x2efc
+entry 0x403c8920
+[0;32mI (24) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Apr 28 2026 22:33:23[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (25) boot: efuse block revision: v1.3[0m
+[0;32mI (25) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (25) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (26) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (26) boot: Enabling RNG early entropy source...[0m
+[0;32mI (26) boot: Partition Table:[0m
+[0;32mI (26) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (27) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (27) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (27) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (28) boot: End of partition table[0m
+[0;32mI (28) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=16e8ch ( 93836) map[0m
+[0;32mI (45) esp_image: segment 1: paddr=00026eb4 vaddr=3fc93500 size=06548h ( 25928) load[0m
+[0;32mI (51) esp_image: segment 2: paddr=0002d404 vaddr=40374000 size=02c14h ( 11284) load[0m
+[0;32mI (54) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=49288h (299656) map[0m
+[0;32mI (107) esp_image: segment 4: paddr=000792b0 vaddr=40376c14 size=0c878h ( 51320) load[0m
+[0;32mI (118) esp_image: segment 5: paddr=00085b30 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (126) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (126) boot: Disabling RNG early entropy source...[0m
+[0;32mI (128) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (128) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (128) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (128) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (128) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (129) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (129) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (129) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (129) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (129) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (130) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (130) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (130) esp_psram: Speed: 40MHz[0m
+[0;32mI (130) cpu_start: Multicore app[0m
+[0;32mI (861) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (870) cpu_start: Pro cpu start user code[0m
+[0;32mI (870) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (871) app_init: Application information:[0m
+[0;32mI (871) app_init: Project name:     audio_cap[0m
+[0;32mI (871) app_init: App version:      v5.5.3[0m
+[0;32mI (871) app_init: Compile time:     Apr 28 2026 22:33:07[0m
+[0;32mI (871) app_init: ELF file SHA256:  d5c98bb54...[0m
+[0;32mI (871) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (871) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (872) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (872) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (872) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (872) heap_init: At 3FCCFE98 len 00019878 (102 KiB): RAM[0m
+[0;32mI (872) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (873) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (873) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (873) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (874) spi_flash: detected chip: generic[0m
+[0;32mI (875) spi_flash: flash io: dio[0m
+[0;32mI (875) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (875) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (876) main_task: Started on CPU0[0m
+[0;32mI (886) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (886) main_task: Calling app_main()[0m
+[0;32mI (886) main_task: Returned from app_main()[0m
+[0;32mI (886) DSP: DSP library initialized successfully[0m
+[0;32mI (906) audio_capture: TFLite initialized OK[0m
+[0;32mI (1386) audio_capture: SIL:-61 UNK:-128 YES:-36 BASK:127[0m
+[0;32mI (1796) audio_capture: SIL:-62 UNK:-127 YES:-32 BASK:127[0m
+[0;32mI (2216) audio_capture: SIL:-58 UNK:-126 YES:-33 BASK:127[0m
+[0;32mI (2636) audio_capture: SIL:-58 UNK:-126 YES:-33 BASK:127[0m
+[0;32mI (3056) audio_capture: SIL:-58 UNK:-126 YES:-33 BASK:127[0m
+[0;32mI (3476) audio_capture: SIL:-60 UNK:-124 YES:-34 BASK:127[0m
+[0;32mI (3896) audio_capture: SIL:-59 UNK:-125 YES:-33 BASK:127[0m
+[0;32mI (4316) audio_capture: SIL:-61 UNK:-125 YES:-31 BASK:127[0m
+[0;32mI (4736) audio_capture: SIL:-61 UNK:-124 YES:-31 BASK:127[0m
+[0;32mI (5156) audio_capture: SIL:-62 UNK:-123 YES:-32 BASK:127[0m
+[0;32mI (5576) audio_capture: SIL:-60 UNK:-124 YES:-33 BASK:127[0m
+[1;31mE (5956) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (5956) task_wdt:  - IDLE1 (CPU 1)[0m
+[1;31mE (5956) task_wdt: Tasks currently running:[0m
+[1;31mE (5956) task_wdt: CPU 0: IDLE0[0m
+[1;31mE (5956) task_wdt: CPU 1: audio_task[0m
+[1;31mE (5956) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40377B12:0x3FC97F90 0x40376F2D:0x3FC97FB0 0x420189E1:0x3FCE2880 0x42018316:0x3FCE28A0 0x420197E9:0x3FCE2960 0x4201A2A6:0x3FCE2C50 0x4202A57A:0x3FCE2C90 0x4200A6A6:0x3FCE2CC0 0x42009572:0x3FCE2CE0 0x4200994D:0x3FCE34C0 0x4037AC95:0x3FCE34F0
+
+[0;32mI (5996) audio_capture: SIL:-61 UNK:-122 YES:-31 BASK:127[0m
+[0;32mI (6416) audio_capture: SIL:-60 UNK:-124 YES:-33 BASK:127[0m
+[0;32mI (6836) audio_capture: SIL:-60 UNK:-124 YES:-35 BASK:127[0m
+[0;32mI (7256) audio_capture: SIL:-60 UNK:-124 YES:-35 BASK:127[0m
+[0;32mI (7676) audio_capture: SIL:-63 UNK:-124 YES:-30 BASK:127[0m
+[0;32mI (8096) audio_capture: SIL:-61 UNK:-124 YES:-32 BASK:127[0m
+[0;32mI (8516) audio_capture: SIL:-61 UNK:-124 YES:-32 BASK:127[0m
+[0;32mI (8936) audio_capture: SIL:-60 UNK:-123 YES:-32 BASK:127[0m
+[0;32mI (9356) audio_capture: SIL:-62 UNK:-123 YES:-31 BASK:127[0m
+[0;32mI (9776) audio_capture: SIL:-61 UNK:-124 YES:-32 BASK:127[0m
+[0;32mI (10206) audio_capture: SIL:-61 UNK:-124 YES:-32 BASK:127[0m
+[0;32mI (10626) audio_capture: SIL:-61 UNK:-124 YES:-32 BASK:127[0m
+[1;31mE (10956) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (10956) task_wdt:  - IDLE1 (CPU 1)[0m
+[1;31mE (10956) task_wdt: Tasks currently running:[0m
+[1;31mE (10956) task_wdt: CPU 0: IDLE0[0m
+[1;31mE (10956) task_wdt: CPU 1: audio_task[0m
+[1;31mE (10956) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40377B12:0x3FC97F90 0x40376F2D:0x3FC97FB0 0x42035B29:0x3FCE2590 0x420314E2:0x3FCE2660 0x4201C58E:0x3FCE2740 0x4202A57A:0x3FCE2C90 0x4200A6A6:0x3FCE2CC0 0x42009572:0x3FCE2CE0 0x4200994D:0x3FCE34C0 0x4037AC95:0x3FCE34F0
+
+[0;32mI (11046) audio_capture: SIL:-60 UNK:-125 YES:-34 BASK:127[0m
+[0;32mI (11466) audio_capture: SIL:-60 UNK:-125 YES:-34 BASK:127[0m
+[0;32mI (11886) audio_capture: SIL:-60 UNK:-125 YES:-34 BASK:127[0m
+[0;32mI (12306) audio_capture: SIL:-60 UNK:-125 YES:-34 BASK:127[0m
+[0;32mI (12726) audio_capture: SIL:-60 UNK:-125 YES:-34 BASK:127[0m
+[0;32mI (13146) audio_capture: SIL:-60 UNK:-125 YES:-34 BASK:127[0m
+[0;32mI (13566) audio_capture: SIL:-60 UNK:-125 YES:-34 BASK:127[0m
+[0;32mI (13986) audio_capture: SIL:-60 UNK:-126 YES:-34 BASK:127[0m
+[0;32mI (14416) audio_capture: SIL:-60 UNK:-126 YES:-34 BASK:127[0m
+[0;32mI (14836) audio_capture: SIL:-61 UNK:-125 YES:-34 BASK:127[0m
+[0;32mI (15256) audio_capture: SIL:-61 UNK:-124 YES:-33 BASK:127[0m
+[0;32mI (15676) audio_capture: SIL:-61 UNK:-125 YES:-34 BASK:127[0m
+[1;31mE (15956) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (15956) task_wdt:  - IDLE1 (CPU 1)[0m
+[1;31mE (15956) task_wdt: Tasks currently running:[0m
+[1;31mE (15956) task_wdt: CPU 0: IDLE0[0m
+[1;31mE (15956) task_wdt: CPU 1: audio_task[0m
+[1;31mE (15956) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40377B12:0x3FC97F90 0x40376F2D:0x3FC97FB0 0x42018831:0x3FCE2880 0x42018316:0x3FCE28A0 0x420197E9:0x3FCE2960 0x4201A2A6:0x3FCE2C50 0x4202A57A:0x3FCE2C90 0x4200A6A6:0x3FCE2CC0 0x42009572:0x3FCE2CE0 0x4200994D:0x3FCE34C0 0x4037AC95:0x3FCE34F0
+
+[0;32mI (16096) audio_capture: SIL:-61 UNK:-125 YES:-34 BASK:127[0m
+[0;32mI (16516) audio_capture: SIL:-61 UNK:-124 YES:-33 BASK:127[0m
+[0;32mI (16946) audio_capture: SIL:-61 UNK:-124 YES:-33 BASK:127[0m
+[0;32mI (17366) audio_capture: SIL:-61 UNK:-124 YES:-33 BASK:127[0m
+[0;32mI (17786) audio_capture: SIL:-61 UNK:-125 YES:-34 BASK:127[0m
+[0;32mI (18206) audio_capture: SIL:-59 UNK:-123 YES:-33 BASK:127[0m
+[0;32mI (18626) audio_capture: SIL:-60 UNK:-123 YES:-32 BASK:127[0m
+[0;32mI (19046) audio_capture: SIL:-59 UNK:-122 YES:-33 BASK:127[0m
+[0;32mI (19476) audio_capture: SIL:-59 UNK:-122 YES:-33 BASK:127[0m
+[0;32mI (19896) audio_capture: SIL:-60 UNK:-125 YES:-34 BASK:127[0m
+[0;32mI (20316) audio_capture: SIL:-60 UNK:-124 YES:-33 BASK:127[0m
